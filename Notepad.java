@@ -7,25 +7,27 @@ package Notepad;
 
 /**
  *
- * @author binod
+ * @author manish
  */
 import javax.swing.*;
-import Notepad.Menubar;
 
-public class Notepad extends JFrame{
-    
-    public Notepad(){
-        
-        Menubar menu = new Menubar();
-  
+public class Notepad extends JFrame {
+
+    public Notepad() {
+
+        JMenuBar menuBar = Menubar.getMenuBar();
+
+        add(menuBar);
+
         setTitle("Welcome To Notepad");
-        setSize(600,600);
-        setVisible(true);
+        setSize(600, 600);
         setLayout(null);
+        setVisible(true);
+
     }
-    
+
     public static void main(String[] args) {
         new Notepad();
     }
-    
+
 }

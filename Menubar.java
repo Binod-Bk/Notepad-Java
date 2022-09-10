@@ -12,15 +12,14 @@ import javax.swing.JMenuItem;
 
 /**
  *
- * @author binod
+ * @author manish
  */
-public class Menubar extends JFrame{
+public class Menubar{
     
-    public Menubar(){
-            JMenuBar menu = new JMenuBar();
-        setJMenuBar(menu);
+    public static JMenuBar getMenuBar(){
+        JMenuBar menuBar = new JMenuBar();
         JMenu fileMenu = new JMenu("File");
-        menu.add(fileMenu);
+        menuBar.add(fileMenu);
     
         JMenuItem openItem = new JMenuItem("New");
         fileMenu.add(openItem);
@@ -38,7 +37,7 @@ public class Menubar extends JFrame{
         fileMenu.add(openItem7);
         
         JMenu Menu2 = new JMenu("Edit");
-        menu.add(Menu2);
+        menuBar.add(Menu2);
     
         JMenuItem openItem8 = new JMenuItem("Undo");
         Menu2.add(openItem8);
@@ -52,7 +51,7 @@ public class Menubar extends JFrame{
         Menu2.add(openItem12);
         
         JMenu formatMenu = new JMenu("Format");
-        menu.add(formatMenu);
+        menuBar.add(formatMenu);
         
         JMenuItem openItem13 = new JMenuItem("Word Wrap");
         formatMenu.add(openItem13);
@@ -60,7 +59,7 @@ public class Menubar extends JFrame{
         formatMenu.add(openItem14);
         
         JMenu viewMenu= new JMenu("View");
-        menu.add(viewMenu);
+        menuBar.add(viewMenu);
         
         JMenuItem openItem15 = new JMenuItem("Zoom");
         viewMenu.add(openItem15);
@@ -68,7 +67,7 @@ public class Menubar extends JFrame{
         viewMenu.add(openItem16);
         
         JMenu helpMenu = new JMenu("Help");
-        menu.add(helpMenu);
+        menuBar.add(helpMenu);
 
         JMenuItem openItem17 = new JMenuItem("View Help");
         helpMenu.add(openItem17);
@@ -76,7 +75,9 @@ public class Menubar extends JFrame{
         helpMenu.add(openItem18);
         JMenuItem openItem19 = new JMenuItem("About Notepad");
         helpMenu.add(openItem19);
-    
+        
+        return menuBar;
 }
+
 
 }
