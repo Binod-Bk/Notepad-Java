@@ -12,7 +12,7 @@ import javax.swing.JMenuItem;
 
 /**
  *
- * @author manish
+ * @author binod
  */
 public class Menubar{
     

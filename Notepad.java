@@ -7,7 +7,7 @@ package Notepad;
 
 /**
  *
- * @author manish
+ * @author binod
  */
 import javax.swing.*;
 
